@@ -1,0 +1,29 @@
+# RESPOND mode test cases
+# Simple questions answerable with existing knowledge
+
+tasks:
+  - id: respond_1
+    query: "What is the capital of France?"
+    expected_mode: RESPOND
+    expected_contains: ["Paris"]
+    
+  - id: respond_2
+    query: "Explain what photosynthesis is in simple terms"
+    expected_mode: RESPOND
+    expected_contains: ["light", "plant", "energy"]
+    
+  - id: respond_3
+    query: "What is the difference between Python and JavaScript?"
+    expected_mode: RESPOND
+    expected_contains: ["Python", "JavaScript"]
+    
+  - id: respond_4
+    query: "Tell me about the water cycle"
+    expected_mode: RESPOND
+    expected_contains: ["water", "evaporation", "precipitation"]
+    
+  - id: respond_5
+    query: "Who wrote Romeo and Juliet?"
+    expected_mode: RESPOND
+    expected_contains: ["Shakespeare"]
+

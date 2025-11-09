@@ -1,0 +1,29 @@
+# SEARCH mode test cases
+# Questions requiring current/real-time information
+
+tasks:
+  - id: search_1
+    query: "What is the current weather in San Francisco?"
+    expected_mode: SEARCH
+    expected_contains: []  # Weather changes, can't predict
+    
+  - id: search_2
+    query: "Latest news about artificial intelligence"
+    expected_mode: SEARCH
+    expected_contains: ["AI", "artificial intelligence"]
+    
+  - id: search_3
+    query: "Who won the most recent NBA championship?"
+    expected_mode: SEARCH
+    expected_contains: []
+    
+  - id: search_4
+    query: "What are the top trending movies right now?"
+    expected_mode: SEARCH
+    expected_contains: ["movie"]
+    
+  - id: search_5
+    query: "Current price of Bitcoin"
+    expected_mode: SEARCH
+    expected_contains: []
+

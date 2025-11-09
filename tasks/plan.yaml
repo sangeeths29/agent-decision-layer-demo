@@ -1,0 +1,29 @@
+# PLAN mode test cases
+# Complex tasks requiring multi-step planning
+
+tasks:
+  - id: plan_1
+    query: "Help me plan a wedding for 100 guests"
+    expected_mode: PLAN
+    expected_contains: ["venue", "budget", "guest", "plan"]
+    
+  - id: plan_2
+    query: "I want to start an online business but don't know where to begin"
+    expected_mode: PLAN
+    expected_contains: ["step", "business", "plan"]
+    
+  - id: plan_3
+    query: "How do I learn machine learning from scratch?"
+    expected_mode: PLAN
+    expected_contains: ["step", "learn", "machine learning"]
+    
+  - id: plan_4
+    query: "Help me prepare for a marathon in 6 months"
+    expected_mode: PLAN
+    expected_contains: ["training", "plan", "week"]
+    
+  - id: plan_5
+    query: "I need to organize a cross-country move"
+    expected_mode: PLAN
+    expected_contains: ["step", "move", "plan"]
+

@@ -1,0 +1,29 @@
+# ACT mode test cases
+# Calculations and data processing tasks
+
+tasks:
+  - id: act_1
+    query: "Calculate 234 multiplied by 567"
+    expected_mode: ACT
+    expected_contains: ["132678"]
+    
+  - id: act_2
+    query: "What is the square root of 12345?"
+    expected_mode: ACT
+    expected_contains: ["111"]
+    
+  - id: act_3
+    query: "Generate the first 10 Fibonacci numbers"
+    expected_mode: ACT
+    expected_contains: ["1", "1", "2", "3", "5", "8", "13"]
+    
+  - id: act_4
+    query: "Calculate the factorial of 8"
+    expected_mode: ACT
+    expected_contains: ["40320"]
+    
+  - id: act_5
+    query: "What is 15 percent of 850?"
+    expected_mode: ACT
+    expected_contains: ["127"]
+
